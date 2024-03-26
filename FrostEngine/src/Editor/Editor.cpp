@@ -135,7 +135,7 @@ namespace frost::editor
                 //ImGui::GetMainViewport();
                 frost::ECS::Transform* tr = SelectEntity->GetComponent<frost::ECS::Transform>();
                 frost::ECS::SpriteRenderer* sr = SelectEntity->GetComponent<frost::ECS::SpriteRenderer>();
-                frost::core::RenderDevice* rd = frost::core::RenderDevice::GetInstance();
+                //frost::core::RenderDevice* rd = frost::core::RenderDevice::GetInstance();
                 //frost::ECS::BoxCollider* bc = SelectEntity->GetComponent<frost::ECS::BoxCollider>();
 
                 // Get Transform //
