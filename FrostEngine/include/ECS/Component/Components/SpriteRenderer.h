@@ -45,10 +45,10 @@ namespace frost::ECS
 
 		[[nodiscard]] glm::vec4 GetColor() const;
 		void SetColor(const glm::vec4& _NewColor);
-
+		glm::vec4 m_color = { 1, 1, 1, 1 };
 	private:
 		std::string m_spriteTexturePath = "";
-		glm::vec4 m_color = { 1, 1, 1, 1 };
+
 		frost::core::Texture* m_spriteTexture;
 
 

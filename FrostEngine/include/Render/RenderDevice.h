@@ -34,6 +34,7 @@ namespace frost::core
 		float	GetZoom();
 
 		void	SetClearColor(glm::vec4 _color);
+		glm::vec4 GetClearColor();
 
 		// Frost engine life cycle methods
 		void	Update();

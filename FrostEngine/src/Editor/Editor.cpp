@@ -10,6 +10,7 @@
 #include "ECS/Component/Components/Transform.h"
 #include "ECS/Component/Components/SpriteRenderer.h"
 #include "ECS/Component/Components/BoxCollider.h"
+#include "Render/RenderDevice.h"
 #include "GLFW/glfw3.h"
 #include <iostream>
 
@@ -134,6 +135,7 @@ namespace frost::editor
                 //ImGui::GetMainViewport();
                 frost::ECS::Transform* tr = SelectEntity->GetComponent<frost::ECS::Transform>();
                 frost::ECS::SpriteRenderer* sr = SelectEntity->GetComponent<frost::ECS::SpriteRenderer>();
+                frost::core::RenderDevice* rd = frost::core::RenderDevice::GetInstance();
                 //frost::ECS::BoxCollider* bc = SelectEntity->GetComponent<frost::ECS::BoxCollider>();
 
                 // Get Transform //
@@ -170,7 +172,9 @@ namespace frost::editor
                 //ImGui::Checkbox("Box Collider", &bc->);
 
                 //ImGui::Button(sr->GetColor().c_str());
-                
+                //auto aa = sr->GetColor().x;
+                //float ColorA[] = { rd->GetClearColor().x,rd->GetClearColor().y,rd->GetClearColor().z,rd->GetClearColor().w };
+                //ImGui::ColorEdit4("Color Edit ",ColorA);
 
                 //SpriteRenderer* sr = m_child->GetComponent<SpriteRenderer>();
                 ImGui::End();
